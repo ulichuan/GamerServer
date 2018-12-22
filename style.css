@@ -3,6 +3,18 @@
 *
 *
 **/
+/* --------------------------------------
+	FONTS FROM GOOGLE - FONTS 
+
+	- soft lines -
+ * font-family: 'Open Sans Condensed', sans-serif;
+ * font-family: 'Roboto', sans-serif;
+ * font-family: 'Source Sans Pro', sans-serif;
+ * 
+
+-------------------------------------- */
+
+
 
 /* --------------------------------------
 	General Styles  
@@ -71,6 +83,7 @@ header
 
 .wbsp-main {
 	width: 90%;
+	max-width: 1300px;
 	margin: 0 auto;
 }
 /*--------------------------------------------------------------
@@ -130,7 +143,7 @@ header img {
 	position: relative;
 	display: inline-block;
 	margin: 0 auto;
-	height: 170px;
+	height: 169px;
 }
 .logo-area .logo {
 	float: left;
@@ -153,7 +166,7 @@ header img {
 	z-index: 999;
 	position: relative;
 	display: inline-block;
-	margin: 5px auto;
+	margin: 5px auto 0 auto;
 	bottom: 0;
 }
 .main-menu nav {
@@ -177,7 +190,7 @@ header img {
 .main-menu nav ul li {
 	margin: 5px 10px 10px 10px;
 	display: inline-block;
-	padding: 2em;
+	padding: 2em 1em;
 }
 .main-menu nav ul li a {
 	font-family: open sans,sans-serif;
@@ -194,12 +207,276 @@ header img {
 	padding: 34px;
 }
 
+/*--------------------------------------------------------------
+  *****   BARR BREADCRUMBS *****
+--------------------------------------------------------------*/
+
+.wbsp-title-section {
+	margin: 0;
+	width: 100%;
+	height: 105px;
+	background-color: #e7e8ea;
+	padding: 37px 0 38px;
+	font-size: 14px;
+	line-height: 23px;
+	color: #272a31;
+}
+.wbsp-actual-page {
+	width: 45%;
+}
+.wbsp-title-section ul {
+	width: 45%;
+	display: block;
+}
+.wbsp-title-section ul li {
+	display: inline-block;
+	float: right;
+	margin-right: 4px;
+	font-style: normal;
+	line-height: 28px;
+
+}
+.wbsp-actual-page h1,
+.wbsp-breadcrumbs h1 {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.wbsp-title-section .wbsp-divider {
+	font-size: 34px;
+	margin-right: 8px;
+	margin-left: 8px;
+	font-family: 'Roboto', sans-serif;
+}
+.wbsp-title-section ul li a {
+	color: #272a31;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*--------------------------------------------------------------
+  *****   CONTENT AREA *****
+--------------------------------------------------------------*/
+
+.content {
+	margin: 0;
+	padding-top: 40px;
+}
+/*********** Title Section ***********/
+.wbsp-entry {
+	width: 100%;
+	color: #272a31;
+}
+
+.wbsp-entry  h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 34px;
+	padding: 24px 0 41px;
+}
+/*********** Entries First-Box Section ***********/
+
+.wbsp-show-box {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+	margin: 0px;
+}
+.wbsp-article {
+	/*-webkit-flex: 0 0 30%;
+           flex: 0 0 30%; */
+    -webkit-align-self: center;
+    align-self: center;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 2em;
+	width: 30%;
+}
+.wbsp-thumbs {
+	-webkit-background-size: cover;   /* Safari 3.0 */
+       -moz-background-size: cover;       /* Gecko 1.9.2 (Firefox 3.6) */
+         -o-background-size: cover;       /* Opera 9.5 */
+            background-size: cover;       /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+	overflow: hidden;
+	min-height: 200px;
+	max-height: 250px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
+}
+.wbsp-thumbs img {
+	transition: transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+    -o-transition: -o-transform 1s;
+    background-position: bottom center;
+   	height: auto;
+	width: 100%;
+	opacity: 0.6;
+	display: block;
+}
+.wbsp-thumbs img:hover {
+
+	transform : scale(1.1);
+    -moz-transform : scale(1.1);      /* Firefox */
+    -webkit-transform : scale(1.1);   /* Chrome - Safari */
+    -o-transform : scale(1.1);        /* Opera */
+}
+.wbsp-date {
+	position: absolute;
+	bottom: 9.6%;
+	margin: 0;
+}
+.wbsp-date p {
+	font-size: 34px;
+	text-align: center;
+	background: #3498db;
+	color: #fff;
+	padding: 10px 20px 0px 20px;
+}
+.wbsp-date p:nth-child(2) {
+	font-size: 14px;
+	padding: 0 20px 20px 20px;
+}
+.wbsp-context-dark {
+	background: #272a31;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 17px 46px 30px;
+}
+.wbsp-context-dark h2 {
+	font-size: 20px;
+	line-height: 20px;
+	text-align: left;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0;
+	margin: 9px 0 15px; 
+}
+.wbsp-context-dark h2 a {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+
+}
+.wbsp-context-dark h2 a:hover {
+	color: #3498db;
+}
+.wbsp-context-dark p {
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	text-align: justify;
+}
+
+/*********** Entries Second-Box Section  2 Columns ***********/
+
+.two-column {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+	margin: 0px;
+}
+.doble-column {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-self: center;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    align-self: flex-start;
+	width: 60%;
+}
+.wbsp-context-light {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-self: center;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	width: 100%;
+}
+.circle-thumb {
+	display: flex;
+  	justify-content: flex-start;
+  	width: 30%;
+}
+.light-title,
+.light-content {
+	display: flex;
+	-webkit-align-self: center;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.
+
+.wbsp-thumbs-light {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+    justify-content: center;
+	width: 30%;
+}
 
 
 
 
+/* --------------------------------------
+         Footer - Grid
+______________ */
 
 
 
+.wbsp-footer-grid {
+  display: grid;
+  height: 200px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
 
+.wbsp-footer-grid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+/* --------------------------------------
+         Footer - SOCIAL MEDIA
+______________ */
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 
