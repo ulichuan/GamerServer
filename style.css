@@ -1,6 +1,6 @@
 /* Styles by games */
 /**
-*
+* design: https://www.templatemonster.com/es/demo/52906.html;
 *
 **/
 /* --------------------------------------
@@ -47,7 +47,7 @@ img.alignright, img[align="right"] {
 hr.clear {
 	clear: both;
 	visibility: hidden;
-	margin: 0px;
+	margin: 10px 0 10px;
 	padding: 0px;
 	height: 0px;
 }
@@ -82,7 +82,7 @@ header
 }
 
 .wbsp-main {
-	width: 90%;
+	width: 80%;
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -399,6 +399,13 @@ header img {
 	width: 100%;
 	height: 300px;
 }
+
+.inside-box {
+	display: -webkit-flex;
+	display: flex;
+  	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
 .circle-thumb {
 	display: -webkit-flex;
 	display: flex;
@@ -409,22 +416,30 @@ header img {
   	width: 30%;
 }
 .circle-thumb img {
-width: 100%;
+width: 80%;
 border-radius: 50%;
 }
-.light-title,
+.wbsp-column-box {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	width: 60%;
+}
+.light-title {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	width: 100%;
+}
 .light-content {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-self: left;
-	-webkit-flex: 0 0 30%;
-           flex: 0 0 30%; 
-    -webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
-	width: 60%;
-
-}
-.light-content .light-title {
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	width: 100%;
 
 }
 .light-content .light-title h2 {
@@ -447,25 +462,6 @@ border-radius: 50%;
 
 }
 
-
-/*********** Game Page ***********/
-.wbsp-gril-gamepage {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.wbsp-gril-gamepage > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  text-align: center;
-  font-size: 30px;
-}
-
-
-
 /* --------------------------------------
           Banner Section
 ______________ */
@@ -473,35 +469,153 @@ ______________ */
 	width: 100%;
 	height: 270px;
 	margin: 34px 0;
-	
 }
 .wbsp-banner img {
+	transition: transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+    -o-transition: -o-transform 1s;
+    background-position: bottom center;
+   	height: 100%;
 	width: 100%;
-	height: 100%;
+	display: block;
+
 }
-
-
+.wbsp-banner-box {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	top: -60%;
+	padding: 33px 20px 0 47px;
+	min-height: 160px;
+}
+.wbsp-banner-title,
+.wbsp-banner-content {
+	width: 100%;
+}
+.wbsp-banner-title h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 40px;
+	color: #fff;
+}
+.wbsp-banner-title h2:hover {
+	color: #3498db;
+}
+.wbsp-banner-content p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
 /* --------------------------------------
-          Grid - fechas
+          Grid - fechas -Panels Six Elementes -
 ______________ */
 
 .wbsp-fechas-grid {
   display: grid;
-  height: 400px;
+  height: auto;
   align-content: end;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  padding: 10px;
+  
 }
 
-.wbsp-fechas-grid  > div {
+/*.wbsp-fechas-grid  > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}. */
+.wbsp-small-panel {
+  	display: grid;
+  	height: 200px;
+  	align-content: end;
+ 	 grid-template-columns: auto auto auto;
+ 	 padding: 10px;
+}
+.wbsp-grid {
+	display: grid;
+  	grid-template-columns: auto auto;
+}
+.wbsp-box-blue {
+	background-color: #3498db;
+	margin: 0;
+	color: #fff;
+	padding: 20px;
+}
+.wbsp-box-blue h2 {
+	font-size: 38px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.wbsp-box-blue p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 21px;
+}
+.wbsp-box-grey {
+	display: grid;
+	grid-template-columns: auto auto;
+	background-color: #ddd;
+	margin: 0;
+	display: block;
+	transform: 1s;
+}
+.wbsp-group {
+	display: inline-block;
+	padding: 20px 24px 15px;
+}
+.wbsp-box-grey h3 {
+	display: inline-block;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #404040;
+	font-size: 24px;
+}
+.wbsp-box-grey p {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #bbbaba;
+}
+.wbsp-box-grey .wbsp-con {
+	display: inline-block;
+	color: #404040;
+	font-size: 28px;
+	float: right;
+	margin: 10% auto;
+	padding: 5px 20px;
 }
 
+.wbsp-box-grey:hover {
+	background-color: #404040;
+	color: #bbbaba;
+}
+.wbsp-box-grey:hover h3 {
+	color: #bbbaba;
+}
+/* -------------------------------------
 
+ 	**** FAQ - PAGE - *******
+
+ --------------------------------------- */
+ /** del ulistudio 'nav' **/
+ .wbsp-faq {
+	display: table;
+}
+.wbsp-faq elemento1 {
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+}
+
+.the-nav label {
+	cursor: pointer;
+	position: fixed;
+	top: 50px;
+	left: 30px;
+	font-size: 3rem;
+	color:  #989899 ; 
+	z-index: 10;
+	transition: all 300ms;
+}
 /* --------------------------------------
          Footer - Grid
 --------------------------------------*/
