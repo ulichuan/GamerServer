@@ -267,7 +267,7 @@ header img {
 
 .wbsp-entry  h2 {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 34px;
+	font-size: 38px;
 	padding: 24px 0 41px;
 }
 /*********** Entries First-Box Section ***********/
@@ -373,8 +373,8 @@ header img {
 	width: 100%;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
     -webkit-justify-content: space-between;
     justify-content: space-between;
 	margin: 0px;
@@ -382,50 +382,110 @@ header img {
 .doble-column {
 	display: -webkit-flex;
 	display: flex;
-	-webkit-align-self: center;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+	-webkit-align-self: flex-start;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
     -webkit-justify-content: space-between;
     justify-content: space-between;
     align-self: flex-start;
-	width: 60%;
+	width: 70%;
 }
 .wbsp-context-light {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-self: center;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
 	width: 100%;
+	height: 300px;
 }
 .circle-thumb {
+	display: -webkit-flex;
 	display: flex;
-  	justify-content: flex-start;
+  	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
   	width: 30%;
+}
+.circle-thumb img {
+width: 100%;
+border-radius: 50%;
 }
 .light-title,
 .light-content {
+	display: -webkit-flex;
 	display: flex;
-	-webkit-align-self: center;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+	-webkit-align-self: left;
+	-webkit-flex: 0 0 30%;
+           flex: 0 0 30%; 
+    -webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	width: 60%;
+
 }
-.
+.light-content .light-title {
+
+}
+.light-content .light-title h2 {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
 
 .wbsp-thumbs-light {
 	display: -webkit-flex;
 	display: flex;
-	-webkit-justify-content: center;
-    justify-content: center;
-	width: 30%;
+  	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  	width: 30%;
+  	padding: 20px 0 10px;
+}
+.wbsp-thumbs-light img {
+	width: 100%;
+
+}
+
+/* --------------------------------------
+          Banner Section
+______________ */
+.wbsp-banner {
+	width: 100%;
+	height: 270px;
+	margin: 34px 0;
+	
+}
+.wbsp-banner img {
+	width: 100%;
+	height: 100%;
 }
 
 
+/* --------------------------------------
+          Grid - fechas
+______________ */
+
+.wbsp-fechas-grid {
+  display: grid;
+  height: 400px;
+  align-content: end;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.wbsp-fechas-grid  > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
 
 
 /* --------------------------------------
          Footer - Grid
-______________ */
+--------------------------------------*/
 
 
 
@@ -435,12 +495,12 @@ ______________ */
   align-content: center;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  background-color: #2196F3;
+  background-color: #272a31;
   padding: 10px;
 }
 
 .wbsp-footer-grid > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
