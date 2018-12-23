@@ -589,6 +589,15 @@ ______________ */
 .wbsp-box-grey:hover i {
 	color: #bbbaba;
 }
+
+/* -------------------------------------
+
+ 	**** GAMES - PAGE - *******
+
+ --------------------------------------- */
+.wbs-content-grid {
+	margin: 10px 0 48px;
+}
 /* -------------------------------------
 
  	**** FAQ - PAGE - *******
@@ -629,6 +638,7 @@ footer {
   display: grid;
   height: 200px;
   width: 80%;
+  max-width: 1300px;
   margin: auto;
   align-content: center;
   grid-template-columns: auto auto auto;
