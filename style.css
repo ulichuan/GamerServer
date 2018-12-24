@@ -162,7 +162,7 @@ header img {
 	width: 100%;
 	height: 110px;
 	max-width: 1300px;
-	background-color: #272a31;
+	background-color: #3498db;
 	z-index: 999;
 	position: relative;
 	display: inline-block;
@@ -180,17 +180,23 @@ header img {
 	text-align: center;
 	height: 100%;
 	position: relative;
-	display: inline-block;
 	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
 }
 .main-menu nav ul {
 	width: 100%;
 	left: 0;
 }
 .main-menu nav ul li {
-	margin: 5px 10px 10px 10px;
+	margin: 0px 0px 10px;
 	display: inline-block;
 	padding: 2em 1em;
+	background-color: #2d3139;
+	border-top: 5px solid #272a31;
+}
+.main-menu nav ul li:hover {
+	background-color: #3498db;
 }
 .main-menu nav ul li a {
 	font-family: open sans,sans-serif;
@@ -250,7 +256,12 @@ header img {
 	color: #272a31;
 	font-family: 'Source Sans Pro', sans-serif;
 }
-
+.wbsp-title-section ul li a:hover {
+	color: #3498db;
+}
+.wbsp-breadcrumbs li:nth-child(1) {
+	color: #3498db;
+}
 /*--------------------------------------------------------------
   *****   CONTENT AREA *****
 --------------------------------------------------------------*/
@@ -314,7 +325,6 @@ header img {
 	display: block;
 }
 .wbsp-thumbs img:hover {
-
 	transform : scale(1.1);
     -moz-transform : scale(1.1);      /* Firefox */
     -webkit-transform : scale(1.1);   /* Chrome - Safari */
@@ -468,7 +478,20 @@ ______________ */
 .wbsp-banner {
 	width: 100%;
 	height: 270px;
+	transition: 500ms;
 	margin: 34px 0;
+	background-color: #404040;
+	border: 0px solid;
+	-webkit-background-size: cover;   /* Safari 3.0 */
+       -moz-background-size: cover;       /* Gecko 1.9.2 (Firefox 3.6) */
+         -o-background-size: cover;       /* Opera 9.5 */
+            background-size: cover;       /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+	overflow: hidden;
+
+}
+.wbsp-banner:hover {
+  	border-top: 15px solid #3498db;
+	border-bottom: 15px solid #3498db;
 }
 .wbsp-banner img {
 	transition: transform 1s;
@@ -476,11 +499,19 @@ ______________ */
     -webkit-transition: -webkit-transform 1s;
     -o-transition: -o-transform 1s;
     background-position: bottom center;
+    opacity: 0.6;
    	height: 100%;
 	width: 100%;
 	display: block;
-
+	border: 0px;
 }
+.wbsp-banner img:hover {
+	transform : scale(1.1);
+    -moz-transform : scale(1.1);      /* Firefox */
+    -webkit-transform : scale(1.1);   /* Chrome - Safari */
+    -o-transform : scale(1.1);        /* Opera */
+}
+
 .wbsp-banner-box {
 	position: relative;
 	width: 100%;
