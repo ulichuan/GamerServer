@@ -82,7 +82,7 @@ header
 }
 
 .wbsp-main {
-	width: 80%;
+	width: 88%;
 	max-width: 1300px;
 	margin: 0 auto;
 }
@@ -430,10 +430,6 @@ width: 80%;
 border-radius: 50%;
 }
 .wbsp-column-box {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row nowrap;
-	flex-flow: row nowrap;
 	width: 60%;
 }
 .light-title {
@@ -443,7 +439,7 @@ border-radius: 50%;
 	flex-flow: row nowrap;
 	width: 100%;
 }
-.light-content {
+.wbsp-column-box .light-content {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-self: left;
@@ -452,11 +448,20 @@ border-radius: 50%;
 	width: 100%;
 
 }
-.light-content .light-title h2 {
+.wbsp-column-box .light-content p {
+	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
+	color: #bbbaba;
+	text-align: justify;
+	padding-top: 20px;
 }
-
+.wbsp-column-box .light-title h2 a {
+	font-family: 'Roboto', sans-serif;
+	color: #404040;
+}
+.wbsp-column-box .light-title h2 a:hover {
+	color: #3498db;
+}
 .wbsp-thumbs-light {
 	display: -webkit-flex;
 	display: flex;
@@ -465,7 +470,7 @@ border-radius: 50%;
     -webkit-justify-content: space-between;
     justify-content: space-between;
   	width: 30%;
-  	padding: 20px 0 10px;
+  	padding: 40px 0 10px;
 }
 .wbsp-thumbs-light img {
 	width: 100%;
@@ -668,7 +673,7 @@ footer {
 .wbsp-footer-grid {
   display: grid;
   height: 200px;
-  width: 80%;
+  width: 88%;
   max-width: 1300px;
   margin: auto;
   align-content: center;
