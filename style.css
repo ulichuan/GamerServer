@@ -118,7 +118,7 @@ header img {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 100px:
+	height: 100px;
 }
 .wbsp-top-menu nav ul {
 	width: 100%;
@@ -162,7 +162,7 @@ header img {
 	width: 100%;
 	height: 110px;
 	max-width: 1300px;
-	/*background-color: #3498db; */
+	background-color: #3498db;
 	z-index: 999;
 	position: relative;
 	display: inline-block;
@@ -182,93 +182,37 @@ header img {
 	position: relative;
 	margin: auto;
 	display: grid;
-	grid-template-columns: auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto;
 }
 .main-menu nav ul {
 	width: 100%;
 	left: 0;
-	background-color: #2d3139;
 }
-/* FUNCIONA SÓLO CON EL CAMBIO DE COLOR PERO NO EL EFECTO */
-/* .main-menu nav ul li {
+.main-menu nav ul li {
 	margin: 0px 0px 10px;
 	display: inline-block;
 	padding: 2em 1em;
 	background-color: #2d3139;
-	border-top: 1px solid #999696;
-	transition: all .3s ease-in-out;
-	 -webkit-transition: all .3s ease-in-out; /** Chrome & Safari **/
-    /* -moz-transition: all .3s ease-in-out; /** Firefox **/
-    /* -o-transition: all .3s ease-in-out; /** Opera **/
-    
-/* }
-.main-menu nav  ul li:hover {
+	border-top: 5px solid #272a31;
+}
+.main-menu nav ul li:hover {
 	background-color: #3498db;
-	transform: translate(0 ,0);
-    -webkit-transform: translate(0,0); /** Chrome & Safari **/
-   /* -o-transform: translate(0,0); /** Opera **/
-   /* -moz-transform: translate(0,0); /** Firefox */
-/* }
-*/
-.wbsp-active {
-	background-color: #3498db;
-	margin: 0px 0px 10px;
 }
-.btn {
-  display: inline-block;
-  margin: 1em;
-  text-transform: uppercase;
-  padding: 2em 2em;
-	background: none;
-  font-weight: bold;
-  position: relative;
-  transition:color 0.3s ease;
-  margin: 0px 0px 10px;
-  border-left: 1px solid #3d3d3f;
-  border-right: 1px solid #232324;
-	width: 100%;
-	height: 100%;
-	border-top: 5px solid #232324;
-  z-index: 0;
-}
-
-.btn:hover {
-  color: #ffffff;
-}
-
-.btn::after {
-  position: absolute;
-  content: '';
-  top:0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  color: #ffffff;
-  background-color: #3498db;
-  transform-origin:left;
-  transition:width 0.3s ease;
-  z-index: -1;
-}
-
-.btn:hover::after {
-  width: 100%;
-}
-
 .main-menu nav ul li a {
 	font-family: open sans,sans-serif;
+	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 600 !important;
 	margin: 0;
 	letter-spacing: 0;
+	border: none;
 	vertical-align: top;
 	position: relative;
 	float: none;
 	padding: 34px;
 }
-.main-menu nav ul li a:hover {
-	color: #ffffff;
-}
+
 /*--------------------------------------------------------------
   *****   BARR BREADCRUMBS *****
 --------------------------------------------------------------*/
@@ -291,7 +235,7 @@ header img {
 	display: block;
 }
 .wbsp-title-section ul li {
-	display: inline-block;
+	display: inline-block !important;
 	float: right;
 	margin-right: 4px;
 	font-style: normal;
@@ -386,6 +330,8 @@ header img {
     -webkit-transform : scale(1.1);   /* Chrome - Safari */
     -o-transform : scale(1.1);        /* Opera */
 }
+
+
 .wbsp-date {
 	position: absolute;
 	bottom: 9.6%;
@@ -530,8 +476,18 @@ border-radius: 50%;
 }
 .wbsp-thumbs-light img {
 	width: 100%;
-
 }
+
+/*********** General Text ***********/
+.webs-general-text h2 {
+  padding-bottom: 5%;
+}
+
+.webs-general-text p {
+  padding-bottom: 8%;
+}
+
+
 
 /* --------------------------------------
           Banner Section
@@ -548,12 +504,13 @@ ______________ */
          -o-background-size: cover;       /* Opera 9.5 */
             background-size: cover;       /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
 	overflow: hidden;
-
 }
+
 .wbsp-banner:hover {
   	border-top: 15px solid #3498db;
 	border-bottom: 15px solid #3498db;
 }
+
 .wbsp-banner img {
 	transition: transform 1s;
     -moz-transition: -moz-transform 1s;
@@ -608,7 +565,6 @@ ______________ */
   align-content: end;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  
 }
 
 /*.wbsp-fechas-grid  > div {
@@ -617,6 +573,7 @@ ______________ */
   padding: 20px 0;
   font-size: 30px;
 }. */
+
 .wbsp-small-panel {
   	display: grid;
   	height: 200px;
@@ -687,37 +644,55 @@ ______________ */
  	**** GAMES - PAGE - *******
 
  --------------------------------------- */
+.wbsp-games-grid {
+ display: grid;
+  height: auto;
+  align-content: end;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
 .wbs-content-grid {
 	margin: 10px 0 48px;
 }
+
+
+
+/****************	Popup **********************/
+.w3-modal {
+  z-index: 999 !important;
+}
+
+
 /* -------------------------------------
 
  	**** FAQ - PAGE - *******
 
  --------------------------------------- */
- /** del ulistudio 'nav' **/
- .wbsp-faq {
-	display: table;
-}
-.wbsp-faq elemento1 {
-	position: absolute;
-	width: 100px;
-	height: 100%;
-	background-color: #fff;
-	top: 0;
-	left: 0;
+
+.wbps-clicker {
+  cursor:pointer;
+  padding-bottom: 3px;
 }
 
-.the-nav label {
-	cursor: pointer;
-	position: fixed;
-	top: 50px;
-	left: 30px;
-	font-size: 3rem;
-	color:  #989899 ; 
-	z-index: 10;
-	transition: all 300ms;
+.wbps-hiddendiv{
+  display:none;
+  height:auto;
+  padding-bottom: 2%;
 }
+
+.wbps-clicker:focus + .wbps-hiddendiv{
+  display:block;
+}
+
+.wbps-faq-main {
+  padding-top: 1.5%;
+  padding-bottom: 2%;
+}
+
+
+
+
 /* --------------------------------------
         ****** FOOTER  ******
 --------------------------------------*/
@@ -740,7 +715,7 @@ footer {
 
 .wbsp-footer-grid > div {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /** logo area ***/
@@ -753,27 +728,36 @@ footer {
 	width: 100%;
 	height: auto;
 }
-.wbsp-legal ul li a {
+
+/** legal area ***/
+.wbsp-legal a {
 	color: #bbbaba;
 	font-size: 14px;
 
 }
-.wbsp-legal ul li a:hover {
+.wbsp-legal a:hover {
 	color: #3498db;
 }
 
-
+/** social area ***/
 .wbsp-social {
 	padding: 24px 10px 20px;
 	color: #404040;
 }
+
 .wbsp-social a {
 	color: #404040;
 	margin: .5em;
 }
-/* --------------------------------------
-         Footer - SOCIAL MEDIA
-______________ */
+
+.wbsp-social a:hover {
+  color: #3498db;
+}
+
+.wbsp-footer-design {
+  position: center;
+  text-emphasis-color: #dddddd;
+}
 
 
 
