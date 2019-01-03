@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <title>Games</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:100|Source+Sans+Pro:200" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script type="text/javascript" src="/js/mytopmenu.js"></script>
-    <script>
-    </script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 <body>
 <div id="container">
-  
+
 
 
   <header class="main header">
     <img src="images/fondo-menu.png">
-      <div id="wbsp-main" class="wbsp-main">
+    <div id="wbsp-main" class="wbsp-main">
 
       <div id="elarea-menu" class="elarea-menu"> <!-- Menu -->
 
         <div class="wbsp-top-menu"> <!-- Top Secction of menu -->
           <nav>
-          <ul> <!-- Text mit Kundenlogin -->
-            <li><a href="#.html">Login</a></li>
-            <li><a href="#.html">Entries</a></li>
-            <li><a href="#.html">Comments</a></li>
-            <li><a href="#.html">Price</a></li>
-          </ul>
+            <ul> <!-- Text mit Kundenlogin -->
+              <li><a href="http://status.webkost.eu">Status</a></li>
+              <li><a href="http://support.webkost.eu">Support</a></li>
+              <li><a href="http://control.webkost.eu">Kundenbereich</a></li>
+            </ul>
           </nav>
         </div> <!-- .wbsp-top-menu -->
 
         <div id="logo-area" class="logo-area"> <!-- LOGO / middle section of menu -->
-         <span id="logo" class="logo"><a href="index.html"><img src="images/logo.png"></a></span><span>GamerServer</span>
+          <span id="logo" class="logo"><a href="index.html"><img src="images/logo.png"></a></span>
         </div>
 
         <div id="main-menu" class="main-menu"> <!-- Main Menu / at the footer of the menu-->
           <nav class="">
-          <ul id="wbsp-bar-menu" class="wbsp-bar-menu">
-            <li class="btn"> <a href="index.html">HOME</a></li>
-            <div class=" wbsp-active"><li class="btn"> <a href="games.html">GAMES</a></li></div>
-            <li class="btn"> <a href="#.html">NEWS</a></li>
-            <li class="btn"> <a href="#.html">BLOG</a></li>
-            <li class="btn"> <a href="#.html">CONTACT</a></li>
-          </ul>
+            <ul id="wbsp-bar-menu" class="wbsp-bar-menu">
+              <li class=""> <a href="index.html">HOME</a></li>
+              <li class=""> <a href="#.html">VOICE</a></li>
+              <li class=""> <a href="#.html">GAMES</a></li>
+              <li class=""> <a href="#.html">KONTAKT</a></li>
+            </ul>
           </nav>
         </div><!-- #main-menu -->
       </div><!-- #elarea-menu -->
@@ -67,131 +65,712 @@
     </div>
   </div><!-- #wbsp-title-section -->
 
-  <!-- Latest News // Wenn man auf das Game Dr[ckt kommt man zur  Games seite -->
-  
+
+  <!-- Games in Grit // Wenn man auf das Game Drückt kommt man ein Popup -->
   <div id="wbsp-main" class="wbsp-main">
-  <div id="content" class="content">
+    <div id="content" class="content">
 
-    <div class="wbsp-entry">
-        <h2>Latest News</h2>  
-    </div>
+      <div class="wbsp-entry">
+        <h2>Gamesserver</h2></div> <!-- Sitetitel -->
   
 
-  <!-- grid section of Top or favorite games -->
-  <div class="wbs-content-grid">
-     
+       <!-- grid section of Top or favorite games -->
+      <div class="wbs-content-grid">
 
-     <div  class="wbsp-fechas-grid"> <!-- Under the Titel // contains gride of top games -->
-       
-        <div class="wbsp-games">
-          <div class="wbsp-thumbs">
 
-            <img src="http://lorempixel.com/640/640/abstract">
-          
+      <div  class="wbsp-games-grid"> <!-- Under the Titel // contains- creats gride of top games -->
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+         <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
+         <div class="wbsp-context-dark">
+           <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
+           <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
+         </div>
+       </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Schließen">&times;</span>
+              <img src="img_avatar4.png" alt="Dein exclusiver Gameserver" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- slots -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
           </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
           <div class="wbsp-context-dark">
             <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
             <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
           </div>
-        </div><!-- Fin del -wbsp-article -->
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
-        <div class="wbsp-games">
-          <div class="wbsp-thumbs">
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Schließen">&times;</span>
+              <img src="img_avatar4.png" alt="Dein exclusiver Gameserver" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
 
-            <img src="http://lorempixel.com/640/640/abstract">
-          
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- slots -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
           </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
           <div class="wbsp-context-dark">
             <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
             <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
           </div>
-        </div><!-- Fin del -wbsp-article -->
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
-        <div class="wbsp-games">
-          <div class="wbsp-thumbs">
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="img_avatar4.png" alt="Login" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
 
-            <img src="http://lorempixel.com/640/640/abstract">
-          
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- password -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
           </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
           <div class="wbsp-context-dark">
             <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
             <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
           </div>
-        </div><!-- Fin del -wbsp-article -->
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
-        <div class="wbsp-games">
-          <div class="wbsp-thumbs">
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="img_avatar4.png" alt="Login" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
 
-            <img src="http://lorempixel.com/640/640/abstract">
-          
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- password -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
           </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
           <div class="wbsp-context-dark">
             <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
             <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
           </div>
-        </div><!-- Fin del -wbsp-article -->
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
-        <div class="wbsp-gmaes">
-          <div class="wbsp-thumbs">
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="img_avatar4.png" alt="Login" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
 
-            <img src="http://lorempixel.com/640/640/abstract">
-          
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- password -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
           </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
           <div class="wbsp-context-dark">
             <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
             <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
           </div>
-        </div><!-- Fin del -wbsp-article -->
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
-        <div class="wbsp-games">
-          <div class="wbsp-thumbs">
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="img_avatar4.png" alt="Login" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
 
-            <img src="http://lorempixel.com/640/640/abstract">
-          
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- password -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
           </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
           <div class="wbsp-context-dark">
             <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
             <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
           </div>
-        </div><!-- Fin del -wbsp-article -->
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="img_avatar4.png" alt="Login" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- password -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
+          </div>
+        </div>
+
+        <div onclick="document.getElementById('id01').style.display='block'">
+          <div class="wbsp-thumbs"><img src="http://lorempixel.com/640/640/abstract"></div>
+          <div class="wbsp-context-dark">
+            <h2><a href="#">TITLE FOR THIS ARTICLE</a></h2>
+            <p>Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Lorem ipsum…</p>
+          </div>
+        </div>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+            <div class="w3-center"><br>
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+              <img src="img_avatar4.png" alt="Login" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+
+            <form action="mailto:info@webkost.eu" method="GET" enctype="text/plain">
+              <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" />
+              </div>
+              <div>
+                <label for="anschrift">Anschrift:</label>
+                <input type="text" id="anschrift" />
+              </div>
+              <div>
+                <label for="plz">PLZ:</label><!-- código postal Numeros -->
+                <input type="text" id="plz" />
+              </div>
+              <div>
+                <label for="ort">ORT:</label>
+                <input type="text" id="ort" />
+              </div>
+              <div>
+                <label for="geburtstag">Geburtstag:</label><!-- fecha nacimiento Numeros -->
+                <input type="text" id="geburtstag" />
+              </div>
+              <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" />
+              </div>
+              <div>
+                <label for="passwort">Passwort:</label><!-- password -->
+                <input type="password" id="passwort" />
+              </div>
+              <div>
+                <label for="dasSpiel">das Spiel:</label>
+                <input type="text" id="dasSpiel" />
+              </div>
+              <div>
+                <label for="slots">wieviele Slots:</label><!-- password -->
+                <input type="text" id="slots" />
+              </div>
+              <div>
+                <label type="text" name="vertragslaufzeit-text" id="vertragslaufzeit" size="20"><br><br />
+                  Vertragslaufzeit:
+                  <select name="vertragslaufzeit">
+                    <option>1 Monate</option>
+                    <option>3 Monate</option>
+                    <option>6 Monate</option>
+                    <option>9 Monate</option>
+                    <option>12 Monate</option>
+                  </select>
+                </label>
+              </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+              <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">
+                <input type="submit" value="Senden">
+             </span>
+            </div>
+
+          </div>
+        </div>
 
 
 
-     </div><!--  Fin de .wbsp-fechas-grid -->
 
-  </div><!-- End of .wbs-content-grid  content elements of grid -->
+      </div> <!-- fin Under the Titel // contains gride of top games -->
 
-  <hr class="clear" />
+
+     </div><!--  grid section of Top or favorite games -->
+
+      <div class="wbsp-entry">
+        <h2>Text für die ganze Seite</h2>
+        <p> Hier ist Peter am Coden! Yeah! <3 echte Auftröge mag ich sehr! Hier ist Peter am Coden! Yeah! <3 echte Auftröge mag ich sehr!Hier ist Peter am Coden! Yeah! <3 echte Auftröge mag ich sehr!Hier ist Peter am Coden! Yeah! <3 echte Auftröge mag ich sehr!</p>
+        <!-- bis hierhin Löschen sollte die horizontalle line dir nicht gefallen -->
+        <hr>
+        <p>Noch mehr text in einer anderen Zeile, damit es Stylisch aussieht! Sollte die Linie dir nicht gefallen einfach bis oben wo "hr" steht löschen! Ein kommentar ist zu finden ;)</p>
+      </div>
+
+    </div><!-- End of .wbs-content-grid  content elements of grid -->
+
+    <hr class="clear" />
 
   </div><!-- #content -->
 </div><!-- #wbsp-main -->
 
+
 <!-- Footer -->
 <footer>
 
-    <div class="wbsp-footer-grid">
-     
+  <div class="wbsp-footer-grid">
+
     <div class="logo-footer"><!-- LOGO -->
       <img src="images/logo.png">
     </div>
     <div> <!-- Terms and Conditions -->
       <div class="wbsp-legal">
-        <ul>
-          <li> <a href=" #html ">GDPR</a></li>
-          <li> <a href=" #html ">Terms&Condition</a></li>
-          <li> <a href=" #html ">Cooky politics</a></li>
-        </ul>
+        <a href="#.html">Impressum</a> |  <a href="#.html">AGB</a> |  <a href="#.html">FAQ</a> |  <a href="#.html">Datenschutz</a>
       </div>
     </div>
-
     <div class="wbsp-social"> <!--Socialmedia -->
       <a href="#"><i class="fab fa-facebook"></i></a>
       <a href="#"><i class="fab fa-twitter"></i></a>
       <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
-    
+
   </div><!-- .wbsp-footer-grid -->
-  </footer>
+  <div class="wbsp-footer-design">
+    <p> Konzipierung bei <a href="#.html">webkost.games</a> realisierung mit der Unterstützung von <a href="www.websparadise.com">WebsParadise</a> </p>
+  </div>
+</footer>
+
 </div><!-- #container -->
+
+
 </body>
 </html>
