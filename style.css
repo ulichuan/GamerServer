@@ -1,49 +1,60 @@
-/* Styles by games */
-/**
+/* --------------------------------------
+* Styles by http://webkost.game
+*
 * design: https://www.templatemonster.com/es/demo/52906.html;
 *
-**/
+* developed by: https://www.websparadise.com
+-------------------------------------- */
+
 /* --------------------------------------
-	FONTS FROM GOOGLE - FONTS 
+	FONTS FROM GOOGLE - FONTS
 
 	- soft lines -
  * font-family: 'Open Sans Condensed', sans-serif;
  * font-family: 'Roboto', sans-serif;
  * font-family: 'Source Sans Pro', sans-serif;
- * 
-
 -------------------------------------- */
 
 
 
+
 /* --------------------------------------
-	General Styles  
-________________________________________ */
+
+	General Styles
+
+--------------------------------------*/
 .center {
 	text-align: center;
 }
+
 img.center, img[align="center"] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .alignleft {
 	float: left;
 }
+
 img.alignleft, img[align="left"] {
 	float: left;
 	margin: 2px 10px 5px 0px;
 }
+
 .alignright {
 	float: right;
 }
+
 img.alignright, img[align="right"] {
 	float: right;
 	margin: 2px 0px 5px 10px;
 }
+
 .clear {
 	clear: both;
 }
+
 hr.clear {
 	clear: both;
 	visibility: hidden;
@@ -52,9 +63,13 @@ hr.clear {
 	height: 0px;
 }
 
+
+
 /* --------------------------------------
-         General Rules 
-________________________________________ */
+
+         General Rules
+
+-------------------------------------- */
 
 *{
 	margin: 0;
@@ -86,8 +101,13 @@ header
 	max-width: 1300px;
 	margin: 0 auto;
 }
+
+
+
 /*--------------------------------------------------------------
+
   *****   HEADER, MENU, LOGO, ... *****
+
 --------------------------------------------------------------*/
 
 header img {
@@ -95,7 +115,8 @@ header img {
 	max-height: 340px;
 	position: absolute;
 }
-/* top-menu */
+
+/********* top-menu **********/
 .elarea-menu {
 	width: 100%;
 	height: 90px;
@@ -120,22 +141,25 @@ header img {
 	width: 100%;
 	height: 100px;
 }
+
 .wbsp-top-menu nav ul {
 	width: 100%;
 	left: 0;
 }
+
 .wbsp-top-menu nav ul li {
 	float: right;
 	margin: 5px 10px 20px 10px;
 	padding: 5px;
 }
+
 .wbsp-top-menu nav ul li a {
 	font-family: open sans,sans-serif;
 	font-size: 12px;
 	color: #626877;
 }
 
-/* Central Nav Menu Header */
+/*********  Central Nav Menu Header  *********/
 .logo-area {
 	width: 100%;
 	max-width: 1300px;
@@ -145,11 +169,13 @@ header img {
 	margin: 0 auto;
 	height: 169px;
 }
+
 .logo-area .logo {
 	float: left;
 	width: 50%;
 	height: 100%;
 }
+
 .logo-area .logo img {
 	width: 100%;
 	height: 100%;
@@ -157,7 +183,7 @@ header img {
 }
 
 
-/* Central Nav Menu Header */
+/*********** Central Nav Menu Header *********/
 .main-menu {
 	width: 100%;
 	height: 110px;
@@ -169,12 +195,14 @@ header img {
 	margin: 5px auto 0 auto;
 	bottom: 0;
 }
+
 .main-menu nav {
 	position: relative;
 	display: block;
 	width: 100%;
 	text-align: center;
 }
+
 .main-menu nav .wbsp-bar-menu {
 	width: 100%;
 	text-align: center;
@@ -184,10 +212,12 @@ header img {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 }
+
 .main-menu nav ul {
 	width: 100%;
 	left: 0;
 }
+
 .main-menu nav ul li {
 	margin: 0px 0px 10px;
 	display: inline-block;
@@ -195,9 +225,11 @@ header img {
 	background-color: #2d3139;
 	border-top: 5px solid #272a31;
 }
+
 .main-menu nav ul li:hover {
 	background-color: #3498db;
 }
+
 .main-menu nav ul li a {
 	font-family: open sans,sans-serif;
 	font-size: 14px;
@@ -213,8 +245,12 @@ header img {
 	padding: 34px;
 }
 
+
+
 /*--------------------------------------------------------------
+
   *****   BARR BREADCRUMBS *****
+
 --------------------------------------------------------------*/
 
 .wbsp-title-section {
@@ -227,13 +263,16 @@ header img {
 	line-height: 23px;
 	color: #272a31;
 }
+
 .wbsp-actual-page {
 	width: 45%;
 }
+
 .wbsp-title-section ul {
 	width: 45%;
 	display: block;
 }
+
 .wbsp-title-section ul li {
 	display: inline-block !important;
 	float: right;
@@ -242,35 +281,47 @@ header img {
 	line-height: 28px;
 
 }
+
 .wbsp-actual-page h1,
 .wbsp-breadcrumbs h1 {
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
 .wbsp-title-section .wbsp-divider {
 	font-size: 34px;
 	margin-right: 8px;
 	margin-left: 8px;
 	font-family: 'Roboto', sans-serif;
 }
+
 .wbsp-title-section ul li a {
 	color: #272a31;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
 .wbsp-title-section ul li a:hover {
 	color: #3498db;
 }
+
 .wbsp-breadcrumbs li:nth-child(1) {
 	color: #3498db;
 }
+
+
+
 /*--------------------------------------------------------------
+
   *****   CONTENT AREA *****
+
 --------------------------------------------------------------*/
 
 .content {
 	margin: 0;
 	padding-top: 40px;
 }
+
 /*********** Title Section ***********/
+
 .wbsp-entry {
 	width: 100%;
 	color: #272a31;
@@ -281,6 +332,7 @@ header img {
 	font-size: 38px;
 	padding: 24px 0 41px;
 }
+
 /*********** Entries First-Box Section ***********/
 
 .wbsp-show-box {
@@ -291,8 +343,9 @@ header img {
 	flex-flow: row wrap;
     -webkit-justify-content: space-between;
     justify-content: space-between;
-	margin: 0px;
+	margin: 0;
 }
+
 .wbsp-article {
 	/*-webkit-flex: 0 0 30%;
            flex: 0 0 30%; */
@@ -303,16 +356,25 @@ header img {
 	margin-top: 2em;
 	width: 30%;
 }
-.wbsp-thumbs {
-	-webkit-background-size: cover;   /* Safari 3.0 */
-       -moz-background-size: cover;       /* Gecko 1.9.2 (Firefox 3.6) */
-         -o-background-size: cover;       /* Opera 9.5 */
-            background-size: cover;       /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
-	overflow: hidden;
-	min-height: 200px;
-	max-height: 250px;
-	background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
+.wbsp-thumbs-main{
+  position: relative;
 }
+.wbsp-thumbs {
+
+  /* prueba uno */
+/*	-webkit-background-size: cover;   /* Safari 3.0 */
+    /*   -moz-background-size: cover; /* Gecko 1.9.2 (Firefox 3.6) */
+   /*      -o-background-size: cover; /* Opera 9.5 */
+  /*          background-size: cover; /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
+  overflow: hidden;
+  /*		min-height: 200px;
+      max-height: 250px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5)); */
+
+  position: relative;
+
+}
+
 .wbsp-thumbs img {
 	transition: transform 1s;
     -moz-transition: -moz-transform 1s;
@@ -324,6 +386,7 @@ header img {
 	opacity: 0.6;
 	display: block;
 }
+
 .wbsp-thumbs img:hover {
 	transform : scale(1.1);
     -moz-transform : scale(1.1);      /* Firefox */
@@ -331,12 +394,15 @@ header img {
     -o-transform : scale(1.1);        /* Opera */
 }
 
-
 .wbsp-date {
 	position: absolute;
-	bottom: 9.6%;
+  bottom: 0px !important;
 	margin: 0;
+
+
+  display: block;
 }
+
 .wbsp-date p {
 	font-size: 34px;
 	text-align: center;
@@ -344,16 +410,19 @@ header img {
 	color: #fff;
 	padding: 10px 20px 0px 20px;
 }
+
 .wbsp-date p:nth-child(2) {
 	font-size: 14px;
 	padding: 0 20px 20px 20px;
 }
+
 .wbsp-context-dark {
 	background: #272a31;
 	box-sizing: border-box;
 	overflow: hidden;
 	padding: 17px 46px 30px;
 }
+
 .wbsp-context-dark h2 {
 	font-size: 20px;
 	line-height: 20px;
@@ -362,16 +431,18 @@ header img {
 	text-transform: uppercase;
 	color: #fff;
 	padding: 0;
-	margin: 9px 0 15px; 
+	margin: 9px 0 15px;
 }
+
 .wbsp-context-dark h2 a {
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
-
 }
+
 .wbsp-context-dark h2 a:hover {
 	color: #3498db;
 }
+
 .wbsp-context-dark p {
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -379,7 +450,7 @@ header img {
 	text-align: justify;
 }
 
-/*********** Entries Second-Box Section  2 Columns ***********/
+/*********** Entries Second-Box Section  2 Columns (images and text) ***********/
 
 .two-column {
 	width: 100%;
@@ -391,6 +462,7 @@ header img {
     justify-content: space-between;
 	margin: 0px;
 }
+
 .doble-column {
 	display: -webkit-flex;
 	display: flex;
@@ -402,6 +474,7 @@ header img {
     align-self: flex-start;
 	width: 70%;
 }
+
 .wbsp-context-light {
 	display: -webkit-flex;
 	display: flex;
@@ -418,6 +491,7 @@ header img {
   	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
+
 .circle-thumb {
 	display: -webkit-flex;
 	display: flex;
@@ -427,13 +501,16 @@ header img {
     justify-content: space-between;
   	width: 30%;
 }
+
 .circle-thumb img {
 width: 80%;
 border-radius: 50%;
 }
+
 .wbsp-column-box {
 	width: 60%;
 }
+
 .light-title {
 	display: -webkit-flex;
 	display: flex;
@@ -441,6 +518,7 @@ border-radius: 50%;
 	flex-flow: row nowrap;
 	width: 100%;
 }
+
 .wbsp-column-box .light-content {
 	display: -webkit-flex;
 	display: flex;
@@ -448,8 +526,8 @@ border-radius: 50%;
 	-webkit-flex-flow: column nowrap;
 	flex-flow: column nowrap;
 	width: 100%;
-
 }
+
 .wbsp-column-box .light-content p {
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
@@ -457,13 +535,16 @@ border-radius: 50%;
 	text-align: justify;
 	padding-top: 20px;
 }
+
 .wbsp-column-box .light-title h2 a {
 	font-family: 'Roboto', sans-serif;
 	color: #404040;
 }
+
 .wbsp-column-box .light-title h2 a:hover {
 	color: #3498db;
 }
+
 .wbsp-thumbs-light {
 	display: -webkit-flex;
 	display: flex;
@@ -474,11 +555,16 @@ border-radius: 50%;
   	width: 30%;
   	padding: 40px 0 10px;
 }
+
 .wbsp-thumbs-light img {
 	width: 100%;
 }
 
+
+
+
 /*********** General Text ***********/
+
 .webs-general-text h2 {
   padding-bottom: 5%;
 }
@@ -487,11 +573,28 @@ border-radius: 50%;
   padding-bottom: 8%;
 }
 
+/*********** Voice Text ***********/
+
+.webs-voice-text h2 {
+  padding-bottom: 2%;
+  font-size: 38px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.webs-voice-text p {
+  padding-bottom: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 21px;
+}
 
 
-/* --------------------------------------
-          Banner Section
-______________ */
+
+/* --------------------------------------------------------------
+
+ **********  Banner Section  ********
+
+--------------------------------------------------------------*/
+
 .wbsp-banner {
 	width: 100%;
 	height: 270px;
@@ -504,6 +607,7 @@ ______________ */
          -o-background-size: cover;       /* Opera 9.5 */
             background-size: cover;       /* Gecko 2.0 (Firefox 4.0) and other CSS3-compliant browsers */
 	overflow: hidden;
+  position: relative;
 }
 
 .wbsp-banner:hover {
@@ -523,6 +627,7 @@ ______________ */
 	display: block;
 	border: 0px;
 }
+
 .wbsp-banner img:hover {
 	transform : scale(1.1);
     -moz-transform : scale(1.1);      /* Firefox */
@@ -531,33 +636,43 @@ ______________ */
 }
 
 .wbsp-banner-box {
-	position: relative;
-	width: 100%;
+	position: absolute;
+  width: 100%;
 	display: inline-block;
-	top: -60%;
+/*	top: -60%; bottom doesnt need this adjustment */
 	padding: 33px 20px 0 47px;
 	min-height: 160px;
+  bottom:0px;
 }
+
 .wbsp-banner-title,
 .wbsp-banner-content {
 	width: 100%;
 }
+
 .wbsp-banner-title h2 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 40px;
 	color: #fff;
 }
+
 .wbsp-banner-title h2:hover {
 	color: #3498db;
 }
+
 .wbsp-banner-content p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	color: #fff;
 }
-/* --------------------------------------
-          Grid - fechas -Panels Six Elementes -
-______________ */
+
+
+
+/*--------------------------------------------------------------
+
+*****   Grid - fechas -Panels Six Elementes   *****
+
+--------------------------------------------------------------*/
 
 .wbsp-fechas-grid {
   display: grid;
@@ -567,13 +682,6 @@ ______________ */
   grid-gap: 10px;
 }
 
-/*.wbsp-fechas-grid  > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}. */
-
 .wbsp-small-panel {
   	display: grid;
   	height: 200px;
@@ -581,24 +689,29 @@ ______________ */
  	 grid-template-columns: auto auto auto;
  	 padding: 10px;
 }
+
 .wbsp-grid {
 	display: grid;
-  	grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
 }
+
 .wbsp-box-blue {
 	background-color: #3498db;
 	margin: 0;
 	color: #fff;
 	padding: 20px;
 }
+
 .wbsp-box-blue h2 {
 	font-size: 38px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
+
 .wbsp-box-blue p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 21px;
 }
+
 .wbsp-box-grey {
 	display: grid;
 	grid-template-columns: auto auto;
@@ -607,20 +720,24 @@ ______________ */
 	display: block;
 	transform: 1s;
 }
+
 .wbsp-group {
 	display: inline-block;
 	padding: 20px 24px 15px;
 }
+
 .wbsp-box-grey h3 {
 	display: inline-block;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #404040;
 	font-size: 24px;
 }
+
 .wbsp-box-grey p {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #bbbaba;
 }
+
 .wbsp-box-grey .wbsp-con {
 	display: inline-block;
 	color: #404040;
@@ -634,16 +751,20 @@ ______________ */
 	background-color: #404040;
 	color: #bbbaba;
 }
+
 .wbsp-box-grey:hover h3,
 .wbsp-box-grey:hover i {
 	color: #bbbaba;
 }
 
-/* -------------------------------------
+
+
+/*--------------------------------------------------------------
 
  	**** GAMES - PAGE - *******
 
- --------------------------------------- */
+--------------------------------------------------------------*/
+
 .wbsp-games-grid {
  display: grid;
   height: auto;
@@ -657,18 +778,315 @@ ______________ */
 }
 
 
+/****************   FORMULAR      ********************/
 
-/****************	Popup **********************/
+input[type=text], select {
+  width: 100%;
+  padding: 10px 18px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.wbps-formular-games {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#wbsp-form-nachricht {
+  height: 200px;
+}
+
+/****************	Popup  of FORMULAR **********************/
 .w3-modal {
   z-index: 999 !important;
 }
 
+.w3-modal{
+  z-index:3;
+  display:none;
+  padding-top:100px;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,0.4)
+}
 
-/* -------------------------------------
+.w3-modal-content{
+  margin:auto;
+  background-color:#fff;
+  position:relative;
+  padding:0;
+  outline:0;
+  width:600px
+}
+
+@media (max-width:600px){
+  .w3-modal-content{
+    margin:0 10px;
+    width:auto!important
+  }
+  .w3-modal{
+    padding-top:30px
+  }
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{
+    position:relative
+  }
+  .w3-hide-small{
+    display:none!important
+  }
+  .w3-mobile{
+    display:block;width:100%!important
+  }
+  .w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{
+    text-align:center
+  }
+  .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{
+    width:100%
+  }
+}
+
+@media (max-width:768px){
+  .w3-modal-content{
+    width:500px
+  }
+  .w3-modal{
+    padding-top:50px
+  }
+}
+
+@media (min-width:993px){
+  .w3-modal-content{
+    width:900px
+  }
+  .w3-hide-large{
+    display:none!important
+  }
+  .w3-sidebar.w3-collapse{
+    display:block!important
+  }
+}
+
+.w3-card-4,.w3-hover-shadow:hover{
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),
+  0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+.w3-animate-zoom {
+  animation:animatezoom 0.6s
+}
+
+@keyframes animatezoom{
+  from{
+    transform:scale(0)} to{transform:scale(1)
+                        }
+}
+
+
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{
+  content:"";
+  display:table;
+  clear:both
+}
+
+.w3-border-top{
+  border-top:1px solid #ccc!important
+}
+
+.w3-border-bottom{
+  border-bottom:1px solid #ccc!important
+}
+
+.w3-padding-16{
+  padding-top:16px!important;
+  padding-bottom:16px!important
+}
+
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{
+  color:#000!important;
+  background-color:#f1f1f1!important
+}
+
+.w3-btn,.w3-button{
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
+}
+
+.w3-btn,.w3-button{
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{
+  cursor:not-allowed;
+  opacity:0.3
+}
+
+.w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{
+  background-color:#ccc;
+  color:#000
+}
+
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{
+  width:100%;
+  text-align:left;
+  padding:8px 16px
+}
+
+.w3-bar .w3-button{
+  white-space:normal
+}
+
+.w3-button:hover{
+  color:#000!important;
+  background-color:#ccc!important
+}
+
+.w3-red,.w3-hover-red:hover{
+  color:#fff!important;
+  background-color:#f44336!important
+}
+
+.w3-center .w3-bar{
+  display:inline-block;
+  width:auto
+}
+
+.w3-bar-block.w3-center .w3-bar-item{
+  text-align:center
+}
+
+.w3-center{
+  text-align:center!important
+}
+
+.w3-xlarge{
+  font-size:24px!important
+}
+
+.w3-display-topright{
+  position:absolute;
+  right:0;
+  top:0
+}
+
+.w3-circle{
+  border-radius:50%
+}
+
+.w3-margin-top{
+  margin-top:16px!important
+}
+
+.w3-right{
+  float:right!important
+}
+
+.w3-right-align{
+  text-align:right!important
+}
+
+.w3-padding{
+  padding:8px 16px!important
+}
+
+
+/*--------------------------------------------------------------
+
+ 	**** Kontakt page *******
+
+-------------------------------------------------------------- */
+
+.wbsp-kontakt-grid {
+  display: grid;
+  height: auto;
+  align-content: end;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding-bottom: 3%;
+}
+
+.wbsp-kontakt-articles {
+  -webkit-flex: 0 0 30%;
+  flex: 0 0 30%;
+  -webkit-align-self: auto;
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-top: 2em;
+  max-width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: .7rem;
+  position: relative;
+}
+
+.wbsp-kontakt-articles h3 {
+  padding: .5em;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wbsp-kontakt-articles p {
+  padding: .3em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+.wbsp-kontakt-articles a {
+  padding: .3em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+.wbsp-kontakt-h2 {
+  background-color: #dddddd;
+  padding: 2px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+
+
+/* --------------------------------------------------------------
 
  	**** FAQ - PAGE - *******
 
- --------------------------------------- */
+--------------------------------------------------------------*/
 
 .wbps-clicker {
   cursor:pointer;
@@ -679,6 +1097,7 @@ ______________ */
   display:none;
   height:auto;
   padding-bottom: 2%;
+  padding-top: 1%;
 }
 
 .wbps-clicker:focus + .wbps-hiddendiv{
@@ -690,12 +1109,19 @@ ______________ */
   padding-bottom: 2%;
 }
 
+.wbps-faq-main h2:hover {
+  color: #3498db;
+}
 
 
 
-/* --------------------------------------
+
+
+/*--------------------------------------------------------------
+
         ****** FOOTER  ******
---------------------------------------*/
+
+--------------------------------------------------------------*/
 
 footer {
   background-color: #272a31;
@@ -718,28 +1144,30 @@ footer {
   font-size: 35px;
 }
 
-/** logo area ***/
+/**************** logo area *****************/
 
 .logo-footer {
 	width: 300px;
 	max-height: 270px;
 }
+
 .logo-footer img {
 	width: 100%;
 	height: auto;
 }
 
-/** legal area ***/
+/**************** legal area *****************/
 .wbsp-legal a {
 	color: #bbbaba;
 	font-size: 14px;
 
 }
+
 .wbsp-legal a:hover {
 	color: #3498db;
 }
 
-/** social area ***/
+/**************** social area **************/
 .wbsp-social {
 	padding: 24px 10px 20px;
 	color: #404040;
@@ -754,10 +1182,18 @@ footer {
   color: #3498db;
 }
 
+/**************** design **************/
+
 .wbsp-footer-design {
-  position: center;
-  text-emphasis-color: #dddddd;
+  text-align: center;
+  color: #bbbaba;
+  padding-bottom: 1%;
 }
 
+.wbsp-footer-design a {
+  color: #bbbaba;
+}
 
-
+.wbsp-footer-design a:hover {
+  color: #3498db;
+}
